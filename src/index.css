@@ -1,0 +1,354 @@
+.page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 20px;
+  margin-top: 120px;
+
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  background-color: #FFFFFF;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.titleWrap {
+  font-size: 26px;
+  font-weight: 700;
+  color: #262626;
+}
+
+.contentWrap {
+  margin-top: 28px;
+  flex: 1;
+}
+
+.inputTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color:#262626;
+}
+
+.inputWrap {
+  display: flex;
+  border-radius: 8px;
+  padding: 14px;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid #e2e0e0;
+}
+
+.inputWrap:focus-within {
+  border: 1px solid #000000;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input::placeholder {
+  color: #dadada;
+}
+
+.errorMessageWrap {
+  margin-top: 8px;
+  color: #ef0000;
+  font-size: 12px;
+}
+
+.passwordChange{
+  font-size: 8px;
+  text-decoration: underline;
+  color:#272727;
+}
+
+.bottomButton {
+  width: 100%;
+  height: 48px;
+  border: none;
+  font-weight: 700;
+  background-color: #757575;
+  border-radius: 64px;
+  color: white;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.bottomButton:disabled {
+  background-color: #dadada;
+  color: white;
+}
+
+
+/* Header */
+.header1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  background-color: #f2f2f2;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+}
+
+.header button {
+  font-size: 16px;
+  padding: 8px 16px;
+  margin-right: 16px;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: gray;
+  cursor: pointer;
+}
+
+/* PostFilter */
+
+.post-filter {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 16px;  
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.post-filter select,
+.post-filter input,
+.post-filter button {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* PostList */
+.post-list {
+  position: absolute;
+
+  width: 96%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.post-list li {
+  border-bottom: 1px solid #ccc;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.post-list li:first-child {
+  font-weight: bold;
+}
+
+.post-list h3 {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.post-list p {
+  color: #888;
+  font-size: 14px;
+  text-align: left;
+}
+
+.post-list p span {
+  font-weight: bold;
+}
+
+.post-list li:nth-child(10n+1) {
+  border-top: 1px solid #ccc;
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.post-setting {
+  background-color: #e0e0e05d;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #F5F5F5;
+  height: 50px;
+  padding: 0 20px;
+  }
+  
+  .header button {
+  margin-left: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  }
+  
+  .post-filter {
+  border: 1px solid #E0E0E0;
+  padding: 20px;
+  margin-bottom: 20px;
+  }
+  
+  .post-filter select {
+  margin-right: 10px;
+  }
+  
+  .post-list {
+  border-top: 1px solid #E0E0E0;
+  }
+  
+  .post-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .post-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #E0E0E0;
+  }
+  
+  .post-list li p {
+  margin-top: 10px;
+  color: #666;
+  }
+  
+  .post-list li h3 {
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: normal;
+  }
+  
+  .post-list li h3:first-child {
+  color: #666;
+  }
+
+/*ProfileModify*/
+.profile-picture {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input2 {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*PostWrite*/
+.page2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin-top: 80px;
+  
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  background-color: #FFFFFF;
+
+  /*overflow: hidden;*/
+
+  display: flex;
+  flex-direction: column;
+}
+
+.asd {
+  margin-top: 60px;
+
+}
+
+.titleWrap2{
+  border-bottom: 1px solid #4e4e4e;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #262626;
+}
+.titleWrap3 {
+  display: flex;
+  padding: 14px;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid #b6b6b6;
+  width: 1170px;
+}
+
+.dateWrap {
+
+  padding: 14px;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid #b6b6b6;
+  width: 47%;
+}
+.reactQuill {
+  height: 500px;
+  margin-top: 10px;
+}
+
+
+
+.buttonPostWrite {
+  /* position: absolute; */
+  bottom: 10px;
+  right: 10px;
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 90%;
+}
+
+.imagefile {
+  position: absolute;
+}
